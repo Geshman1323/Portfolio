@@ -28,10 +28,9 @@
 
 @media (Max-width: 1000px) {
     .About {
-        height: 80vh;
+        height: 90vh;
     }
-
     .Box {
-        height: 30rem;
+        height: 60%;
     }
 }
