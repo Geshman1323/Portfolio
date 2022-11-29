@@ -1,0 +1,78 @@
+.Portfolio {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Skill {
+    margin: .5rem;
+    width: 20rem;
+    height: 8rem;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Range {
+    width: 100%;
+    height: 2rem;
+    background: #e4e4e4;
+    border-radius: 50px;
+}
+
+.inRange {
+    width: 40%;
+    height: 100%;
+    background: #000;
+    border-radius: 50px;
+}
+
+.P-Top > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.P-Top > p {
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+}
+
+.P-Bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2 {
+    width: 25rem;
+    height: 24rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .P-Top {
+        flex-direction: column;
+    }
+
+    .Portfolio {
+        height: 60rem;
+    }
+}
