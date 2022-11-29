@@ -28,7 +28,7 @@
 
 @media (Max-width: 1000px) {
     .About {
-        height: 90vh;
+        height: 100vh;
     }
     .Box {
         height: 60%;
