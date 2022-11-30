@@ -26,9 +26,9 @@
     color: #333;
 }
 
-@media (Max-width: 1000px) {
+@media (Max-width: 600px) {
     .About {
-        height: 100vh;
+        height: 120vh;
     }
     .Box {
         height: 80vh;

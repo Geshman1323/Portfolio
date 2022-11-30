@@ -38,7 +38,6 @@
     <link rel="stylesheet" href="./Css/Contact.css" />
   </head>
   <body>
-    <!-- Navbar -->
     <header>
       <nav>
         <div class="Logo_toggleBtn">
@@ -59,37 +58,66 @@
           <a href="./Contact.html" class="Menu-Links">Contact</a>
         </div>
       </nav>
+      <script src="./JavaScript/Navbar.js"></script>
     </header>
 
-    <script src="./JavaScript/Navbar.js"></script>
-
-    <!-- Contact -->
     <main>
       <section class="Contact">
-        <div class="Box">
-          <h1>Contact</h1>
-          <p>
-            You can find me on most social media platforms. Feel free to tweet
-            at me! Please only use my email for business inquires, or other
-            important issues.
-          </p>
-          <div class="Links">
-            <a href="mailto:geshmanshakeel54@gmail.com" class="Gmail Contact-btns">
-              <i class="fa-sharp fa-solid fa-envelope"></i
-            ></a>
-            <a href="https://www.twitter.com/geshman1323" class="Twitter Contact-btns"
-              ><i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="https://www.Instagram.com/geshman1323" class="Instagram Contact-btns">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-            <script
-              src="https://kit.fontawesome.com/59a9184706.js"
-              crossorigin="anonymous"
-            ></script>
-          </div> 
+        <div class="ContactForm">
+          <h1>Contact Me</h1>
+          <label for="name">
+            Your Name: <br />
+            <input type="text" name="name" id="Name" /> </label
+          ><br />
+          <label for="email">
+            Your Email:<br />
+            <input type="email" name="email" id="Email" /> </label
+          ><br />
+          <label for="Msg">
+            Enter your message: <br />
+            <textarea name="Msg" id="Message"></textarea></label
+          ><br />
+          <button id="submit">Submit</button>
         </div>
       </section>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("5zkr9XZlfcpS5yZPx");
+        })();
+      </script>
+      <script src="./JavaScript/Contact.js"></script>
     </main>
+
+    
+    <footer>
+      <div class="Left-Links">
+        <span class="github footer-btns">
+          <i class="fa-brands fa-github"></i
+        ></span>
+        <span class="Codepen footer-btns"
+          ><i class="fa-brands fa-codepen"></i>
+        </span>
+        <span class="Twitter footer-btns"
+          ><i class="fa-brands fa-twitter"></i>
+        </span>
+        <span class="Instagram footer-btns">
+          <i class="fa-brands fa-instagram"></i
+        ></span>
+      </div>
+      <div class="right-detail">
+        <p>©2022-2023 Geshman</p>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/59a9184706.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./JavaScript/Event.js" defer></script>
+    </footer>
+    
+
   </body>
 </html>
