@@ -1,10 +1,4 @@
-
-const open = (element, Link) => {
-    let e = document.querySelector(element);
-    return e.addEventListener('click' , () => {
-        document.location.href = Link;
-    })
-}
+import { open } from "./Extension";
 
 open(".Twitter", "https://twitter.com/geshman1323");
 open(".Instagram", "https://instagram.com/geshman1343");

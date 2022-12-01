@@ -63,7 +63,7 @@
 
     <main>
       <section class="Contact">
-        <div class="ContactForm">
+        <form class="ContactForm">
           <h1>Contact Me</h1>
           <label for="name">
             Your Name: <br />
@@ -71,14 +71,17 @@
           ><br />
           <label for="email">
             Your Email:<br />
-            <input type="email" name="email" id="Email"  required/> </label
+            <input type="email" name="email" id="Email" required/> </label
           ><br />
           <label for="Msg">
             Enter your message: <br />
             <textarea name="Msg" id="Message" required></textarea></label
           ><br />
+          <div>
+            <p id="Warning"></p>
+          </div>
           <button id="submit">Submit</button>
-        </div>
+        </form>
       </section>
       <script
         type="text/javascript"
@@ -115,7 +118,7 @@
         src="https://kit.fontawesome.com/59a9184706.js"
         crossorigin="anonymous"
       ></script>
-      <script src="./JavaScript/Event.js" defer></script>
+      <script src="./JavaScript/Event.js" type="module" defer></script>
     </footer>
     
 
