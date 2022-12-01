@@ -1,4 +1,9 @@
-import { open } from "./Extension";
+const open = (element, Link) => {
+    let e = document.querySelector(element);
+    return e.addEventListener('click' , () => {
+        document.location.href = Link;
+    })
+}
 
 open(".Twitter", "https://twitter.com/geshman1323");
 open(".Instagram", "https://instagram.com/geshman1343");
